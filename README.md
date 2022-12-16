@@ -53,7 +53,7 @@ Zeng, Z., Li, M. and Vannucci, M. (2022+). Bayesian Image-on-Scalar Regression w
 
 #### Reproducible simulation settings (`repeated_sim_case*`)
 
-- Codes we used to generate dataset and run the models. `data_gen.py` is used to generate the 50 data sets;
+- Codes we used to generate dataset and run the models. `data_gen.py` is used to generate the 50 data sets;  
   `sampler.py` will do what we described above repeatedly for all the set generated.
 - It takes around 6 mins on our cluster for one single data set and around 800GB to store all results for the 50 data sets, mainly because of the MCMC chains for IWP sample, which is 2000-by-900-by-900 dimension. If you'd like to try it, please use a cluster or something.
 
