@@ -25,23 +25,23 @@ Zeng, Z., Li, M. and Vannucci, M. (2022+). Bayesian Image-on-Scalar Regression w
   - `data_gen.py`  
     The data generating function, which will be called when running `sampler.py`  
     When running, it:  
-    - sets random seeds with the setting,
+    - sets random seeds with the setting,  
       `m` represents the number of images observed  
       `p` represents image-size, $p-by-p$ image  
       `p2` represents the number of pixels  
       `q` represents the number of covariates  
       `S` represents the grid on image  
-    - generates parameters from Gaussian Process
+    - generates parameters from Gaussian Process  
       `s2e` represents the $\sigma^2$ used for the covariance surface  
       `s2b` represents the $\sigma^2$ used for coefficient images  
-    - generates data from the settings
-    - runs MUA on each pixels and saves both generated data and statistics maps.
+    - generates data from the settings  
+    - runs MUA on each pixels and saves both generated data and statistics maps.  
   - `prior_settings.py`  
     The prior setting function, which will be called when running `sampler.py`  
     When running, it:  
-    - obtained a optimized kernel for the prior of Inverse-Wishart process
-    - set priors and initial values for MCMC algorithms
-    - add an pad in case of the real data provide invertible variance for IW kernel / variance
+    - obtained a optimized kernel for the prior of Inverse-Wishart process  
+    - set priors and initial values for MCMC algorithms  
+    - add an pad in case of the real data provide invertible variance for IW kernel / variance  
 
 
   - Note: some warnings may be there due to we manually set the intercept is always selected for all local points, `sampler.py` line 90-93, where $\pi_0 = 1$ is enforced for intercept, leading to `log_theta` on line 76 calculated $log(1-\pi_0)$ and report warning. Meanwhile, this won't cause trouble since we will set $\tau_0(s) = 1$ later. 
