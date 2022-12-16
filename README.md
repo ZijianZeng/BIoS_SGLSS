@@ -10,7 +10,7 @@ Zeng, Z., Li, M. and Vannucci, M. (2022+). Bayesian Image-on-Scalar Regression w
 
   - `sampler.py`
     The main function, when running, it 
-    - loads module (with version for the main modules):
+    - loads module (with version for the main modules):  
       numpy: 1.21.2;  
       scipy: 1.6.1;  
       torch: 1.9.0 + cu102;  
