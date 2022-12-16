@@ -1,4 +1,4 @@
-### Bayesian Image-on-Scalar Regression with a Spatial Global-Local Spike-and-Slab Prior
+# Bayesian Image-on-Scalar Regression with a Spatial Global-Local Spike-and-Slab Prior
 
 ___
 
