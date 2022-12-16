@@ -8,8 +8,8 @@ Zeng, Z., Li, M. and Vannucci, M. (2022+). Bayesian Image-on-Scalar Regression w
 
 - The main codes are in the `.py` files
 
-  - `sampler.py`
-    The main function, when running, it 
+  - `sampler.py`  
+    The main function, when running, it  
     - loads module (with version for the main modules):  
       numpy: 1.21.2  
       scipy: 1.6.1  
@@ -22,9 +22,9 @@ Zeng, Z., Li, M. and Vannucci, M. (2022+). Bayesian Image-on-Scalar Regression w
     - defines a few functions for Gibbs sampler  
     - does the sampling and saves results under path: `./samplers/*`  
       **The folders needs to be manually created.**  
-  - `data_gen.py`
-    The data generating function, which will be called when running `sampler.py`
-    When running, it:
+  - `data_gen.py`  
+    The data generating function, which will be called when running `sampler.py`  
+    When running, it:  
     - sets random seeds with the setting,
       `m` represents the number of images observed  
       `p` represents image-size, $p-by-p$ image  
@@ -36,9 +36,9 @@ Zeng, Z., Li, M. and Vannucci, M. (2022+). Bayesian Image-on-Scalar Regression w
       `s2b` represents the $\sigma^2$ used for coefficient images  
     - generates data from the settings
     - runs MUA on each pixels and saves both generated data and statistics maps.
-  - `prior_settings.py`
-    The prior setting function, which will be called when running `sampler.py`
-    When running, it:
+  - `prior_settings.py`  
+    The prior setting function, which will be called when running `sampler.py`  
+    When running, it:  
     - obtained a optimized kernel for the prior of Inverse-Wishart process
     - set priors and initial values for MCMC algorithms
     - add an pad in case of the real data provide invertible variance for IW kernel / variance
