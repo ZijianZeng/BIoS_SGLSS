@@ -46,12 +46,12 @@ Zeng, Z., Li, M. and Vannucci, M. (2022+). Bayesian Image-on-Scalar Regression w
 
   - Note: some warnings may be there due to we manually set the intercept is always selected for all local points, `sampler.py` line 90-93, where $\pi_0 = 1$ is enforced for intercept, leading to `log_theta` on line 76 calculated $log(1-\pi_0)$ and report warning. Meanwhile, this won't cause trouble since we will set $\tau_0(s) = 1$ later. 
 
-`result_plot.ipynb`
+#### Example results (`result_plot.ipynb`):
 
 - The jupyter notebook we used to check results for single simulation. The provided one is for the 'good separation plot' we show in the appendix. When doing the main revision, we re-run everything in the 50 repeated simulations, and no longer use this notebook.
   We attached it considering the recorded plots may offer some intuition about how we report the results
 
-`repeated_sim_case*`
+#### Reproducible simulation settings (`repeated_sim_case*`)
 
 - Codes we used to generate dataset and run the models. `data_gen.py` is used to generate the 50 data sets;
   `sampler.py` will do what we described above repeatedly for all the set generated.
