@@ -11,29 +11,29 @@ Zeng, Z., Li, M. and Vannucci, M. (2022+). Bayesian Image-on-Scalar Regression w
   - `sampler.py`
     The main function, when running, it 
     - loads module (with version for the main modules):  
-      numpy: 1.21.2;  
-      scipy: 1.6.1;  
-      torch: 1.9.0 + cu102;  
-      statsmodels: 0.11.0;  
-      pandas: 1.3.3;  
+      numpy: 1.21.2  
+      scipy: 1.6.1  
+      torch: 1.9.0 + cu102  
+      statsmodels: 0.11.0  
+      pandas: 1.3.3  
 
-    - runs `data_gen.py` to generate data 
-    - runs `prior_settings.py` to load prior settings
-    - defines a few functions for Gibbs sampler
-    - does the sampling and saves results under path: `./samplers/*`
-      **The folders needs to be manually created.**
+    - runs `data_gen.py` to generate data   
+    - runs `prior_settings.py` to load prior settings  
+    - defines a few functions for Gibbs sampler  
+    - does the sampling and saves results under path: `./samplers/*`  
+      **The folders needs to be manually created.**  
   - `data_gen.py`
     The data generating function, which will be called when running `sampler.py`
     When running, it:
     - sets random seeds with the setting,
-      `m` represents the number of images observed
-      `p` represents image-size, $p-by-p$ image
-      `p2` represents the number of pixels
-      `q` represents the number of covariates
-      `S` represents the grid on image
+      `m` represents the number of images observed  
+      `p` represents image-size, $p-by-p$ image  
+      `p2` represents the number of pixels  
+      `q` represents the number of covariates  
+      `S` represents the grid on image  
     - generates parameters from Gaussian Process
-      `s2e` represents the $\sigma^2$ used for the covariance surface
-      `s2b` represents the $\sigma^2$ used for coefficient images
+      `s2e` represents the $\sigma^2$ used for the covariance surface  
+      `s2b` represents the $\sigma^2$ used for coefficient images  
     - generates data from the settings
     - runs MUA on each pixels and saves both generated data and statistics maps.
   - `prior_settings.py`
