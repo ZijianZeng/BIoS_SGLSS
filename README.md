@@ -3,7 +3,9 @@
 Zeng, Z., Li, M. and Vannucci, M. (2022+). Bayesian Image-on-Scalar Regression with a Spatial Global-Local Spike-and-Slab Prior. Bayesian Analysis, accepted. [arXiv: 2209.08234](https://arxiv.org/abs/2209.08234)
 
 ### Use
-Run file `sampler.py'
+Run file `sampler.py` to reproduce the results;  
+`data_gen.py` and `prior_settings.py` will be called to generate data and load prior settings.  
+Please see annotation below for more details.
 
 ## Code annotation 
 
